@@ -18,6 +18,10 @@
 		9576CE9927C8CE5100F710E8 /* ShoppingItemDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CE9827C8CE5100F710E8 /* ShoppingItemDB.swift */; };
 		9576CE9B27C8CE6200F710E8 /* ShoppingItemDBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CE9A27C8CE6200F710E8 /* ShoppingItemDBKeys.swift */; };
 		9576CE9D27C8CECA00F710E8 /* ShoppingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CE9C27C8CECA00F710E8 /* ShoppingStore.swift */; };
+		9576CEA127C8CFFD00F710E8 /* ShoppingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA027C8CFFD00F710E8 /* ShoppingForm.swift */; };
+		9576CEA327C8D02000F710E8 /* ShoppingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA227C8D02000F710E8 /* ShoppingFormView.swift */; };
+		9576CEA527C8D03300F710E8 /* ShoppingItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA427C8D03300F710E8 /* ShoppingItemRow.swift */; };
+		9576CEA727C8D04500F710E8 /* ShoppingItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA627C8D04500F710E8 /* ShoppingItemListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		9576CE9827C8CE5100F710E8 /* ShoppingItemDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemDB.swift; sourceTree = "<group>"; };
 		9576CE9A27C8CE6200F710E8 /* ShoppingItemDBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemDBKeys.swift; sourceTree = "<group>"; };
 		9576CE9C27C8CECA00F710E8 /* ShoppingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStore.swift; sourceTree = "<group>"; };
+		9576CEA027C8CFFD00F710E8 /* ShoppingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingForm.swift; sourceTree = "<group>"; };
+		9576CEA227C8D02000F710E8 /* ShoppingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFormView.swift; sourceTree = "<group>"; };
+		9576CEA427C8D03300F710E8 /* ShoppingItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemRow.swift; sourceTree = "<group>"; };
+		9576CEA627C8D04500F710E8 /* ShoppingItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,8 @@
 		9576CE7E27C8BBA700F710E8 /* MobiLabShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				9576CE9F27C8CFE300F710E8 /* ViewModels */,
+				9576CE9E27C8CFDC00F710E8 /* Views */,
 				9576CE9527C8CE2800F710E8 /* Models */,
 				9576CE8D27C8BCDF00F710E8 /* RealmDB */,
 				9576CE7F27C8BBA700F710E8 /* MobiLabShoppingAppApp.swift */,
@@ -100,6 +110,24 @@
 				9576CE9A27C8CE6200F710E8 /* ShoppingItemDBKeys.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9576CE9E27C8CFDC00F710E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9576CEA227C8D02000F710E8 /* ShoppingFormView.swift */,
+				9576CEA427C8D03300F710E8 /* ShoppingItemRow.swift */,
+				9576CEA627C8D04500F710E8 /* ShoppingItemListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9576CE9F27C8CFE300F710E8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9576CEA027C8CFFD00F710E8 /* ShoppingForm.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9576CE9727C8CE4300F710E8 /* ShoppingItem.swift in Sources */,
+				9576CEA527C8D03300F710E8 /* ShoppingItemRow.swift in Sources */,
+				9576CEA727C8D04500F710E8 /* ShoppingItemListView.swift in Sources */,
+				9576CEA127C8CFFD00F710E8 /* ShoppingForm.swift in Sources */,
 				9576CE8F27C8BD6D00F710E8 /* RealmPersistence.swift in Sources */,
 				9576CE8227C8BBA700F710E8 /* ContentView.swift in Sources */,
 				9576CE9D27C8CECA00F710E8 /* ShoppingStore.swift in Sources */,
+				9576CEA327C8D02000F710E8 /* ShoppingFormView.swift in Sources */,
 				9576CE9927C8CE5100F710E8 /* ShoppingItemDB.swift in Sources */,
 				9576CE9B27C8CE6200F710E8 /* ShoppingItemDBKeys.swift in Sources */,
 				9576CE8027C8BBA700F710E8 /* MobiLabShoppingAppApp.swift in Sources */,

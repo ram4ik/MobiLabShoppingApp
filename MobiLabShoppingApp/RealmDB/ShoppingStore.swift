@@ -56,7 +56,7 @@ extension ShoppingStore {
                 realm.create(ShoppingItemDB.self,
                              value: [
                                 ShoppingItemDBKeys.id.rawValue: shoppingItem.id,
-                                ShoppingItemDBKeys.bought.rawValue: shoppingItem.bought
+                                ShoppingItemDBKeys.bought.rawValue: true
                              ],
                              update: .modified)
             }
@@ -86,6 +86,23 @@ extension ShoppingStore {
     }
     
     func delete(itemId: Int) {
+        objectWillChange.send()
+        
+        guard let shoppingItemDB = itemResults.first (where: {$0.id == itemId}) else {
+            return
+        }
+        
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(shoppingItemDB)
+            }
+        } catch let err {
+            print(err.localizedDescription)
+        }
+    }
+    
+    func deleteBought(itemId: Int) {
         objectWillChange.send()
         
         guard let shoppingItemDB = boughtItemResults.first (where: {$0.id == itemId}) else {

@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var store: ShoppingStore
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ShoppingItemListView(items: store.items, boughtItems: store.boughtItem)
+        }
     }
 }
 
