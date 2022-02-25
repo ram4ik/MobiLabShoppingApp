@@ -33,6 +33,7 @@
 		9576CED327C92A7100F710E8 /* NewItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED227C92A7100F710E8 /* NewItemTests.swift */; };
 		9576CED527C92AA900F710E8 /* NewItemBoughtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED427C92AA900F710E8 /* NewItemBoughtTests.swift */; };
 		9576CED727C92ADC00F710E8 /* NewItemUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED627C92ADC00F710E8 /* NewItemUpdateTests.swift */; };
+		9576CED927C9342800F710E8 /* ShoppingFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED827C9342800F710E8 /* ShoppingFormTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		9576CED227C92A7100F710E8 /* NewItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemTests.swift; sourceTree = "<group>"; };
 		9576CED427C92AA900F710E8 /* NewItemBoughtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemBoughtTests.swift; sourceTree = "<group>"; };
 		9576CED627C92ADC00F710E8 /* NewItemUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemUpdateTests.swift; sourceTree = "<group>"; };
+		9576CED827C9342800F710E8 /* ShoppingFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFormTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */,
 				9576CECA27C9272800F710E8 /* ShoppigItemTests.swift */,
 				9576CECC27C9280A00F710E8 /* ShoppingItemDBTests.swift */,
+				9576CED827C9342800F710E8 /* ShoppingFormTests.swift */,
 			);
 			path = MobiLabShoppingAppTests;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9576CECD27C9280A00F710E8 /* ShoppingItemDBTests.swift in Sources */,
+				9576CED927C9342800F710E8 /* ShoppingFormTests.swift in Sources */,
 				9576CEAF27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift in Sources */,
 				9576CECB27C9272800F710E8 /* ShoppigItemTests.swift in Sources */,
 			);
