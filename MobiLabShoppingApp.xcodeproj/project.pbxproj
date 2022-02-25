@@ -25,7 +25,14 @@
 		9576CEAF27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */; };
 		9576CEBC27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */; };
 		9576CEBE27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */; };
-		9576CEC527C8EF4100F710E8 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEC427C8EF4100F710E8 /* AppUITests.swift */; };
+		9576CEC527C8EF4100F710E8 /* AppMainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEC427C8EF4100F710E8 /* AppMainUITests.swift */; };
+		9576CECB27C9272800F710E8 /* ShoppigItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CECA27C9272800F710E8 /* ShoppigItemTests.swift */; };
+		9576CECD27C9280A00F710E8 /* ShoppingItemDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CECC27C9280A00F710E8 /* ShoppingItemDBTests.swift */; };
+		9576CECF27C929CD00F710E8 /* ShoppingFormViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CECE27C929CD00F710E8 /* ShoppingFormViewTests.swift */; };
+		9576CED127C92A1100F710E8 /* QuantifyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED027C92A1100F710E8 /* QuantifyViewTests.swift */; };
+		9576CED327C92A7100F710E8 /* NewItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED227C92A7100F710E8 /* NewItemTests.swift */; };
+		9576CED527C92AA900F710E8 /* NewItemBoughtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED427C92AA900F710E8 /* NewItemBoughtTests.swift */; };
+		9576CED727C92ADC00F710E8 /* NewItemUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CED627C92ADC00F710E8 /* NewItemUpdateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +72,14 @@
 		9576CEB927C8EC8F00F710E8 /* MobiLabShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiLabShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiLabShoppingAppUITests.swift; sourceTree = "<group>"; };
 		9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiLabShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9576CEC427C8EF4100F710E8 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
+		9576CEC427C8EF4100F710E8 /* AppMainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainUITests.swift; sourceTree = "<group>"; };
+		9576CECA27C9272800F710E8 /* ShoppigItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppigItemTests.swift; sourceTree = "<group>"; };
+		9576CECC27C9280A00F710E8 /* ShoppingItemDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemDBTests.swift; sourceTree = "<group>"; };
+		9576CECE27C929CD00F710E8 /* ShoppingFormViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFormViewTests.swift; sourceTree = "<group>"; };
+		9576CED027C92A1100F710E8 /* QuantifyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantifyViewTests.swift; sourceTree = "<group>"; };
+		9576CED227C92A7100F710E8 /* NewItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemTests.swift; sourceTree = "<group>"; };
+		9576CED427C92AA900F710E8 /* NewItemBoughtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemBoughtTests.swift; sourceTree = "<group>"; };
+		9576CED627C92ADC00F710E8 /* NewItemUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemUpdateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */,
+				9576CECA27C9272800F710E8 /* ShoppigItemTests.swift */,
+				9576CECC27C9280A00F710E8 /* ShoppingItemDBTests.swift */,
 			);
 			path = MobiLabShoppingAppTests;
 			sourceTree = "<group>";
@@ -188,7 +204,12 @@
 			children = (
 				9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */,
 				9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */,
-				9576CEC427C8EF4100F710E8 /* AppUITests.swift */,
+				9576CEC427C8EF4100F710E8 /* AppMainUITests.swift */,
+				9576CECE27C929CD00F710E8 /* ShoppingFormViewTests.swift */,
+				9576CED027C92A1100F710E8 /* QuantifyViewTests.swift */,
+				9576CED227C92A7100F710E8 /* NewItemTests.swift */,
+				9576CED427C92AA900F710E8 /* NewItemBoughtTests.swift */,
+				9576CED627C92ADC00F710E8 /* NewItemUpdateTests.swift */,
 			);
 			path = MobiLabShoppingAppUITests;
 			sourceTree = "<group>";
@@ -348,7 +369,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9576CECD27C9280A00F710E8 /* ShoppingItemDBTests.swift in Sources */,
 				9576CEAF27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift in Sources */,
+				9576CECB27C9272800F710E8 /* ShoppigItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,9 +379,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9576CECF27C929CD00F710E8 /* ShoppingFormViewTests.swift in Sources */,
+				9576CED327C92A7100F710E8 /* NewItemTests.swift in Sources */,
+				9576CED727C92ADC00F710E8 /* NewItemUpdateTests.swift in Sources */,
 				9576CEBC27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift in Sources */,
-				9576CEC527C8EF4100F710E8 /* AppUITests.swift in Sources */,
+				9576CEC527C8EF4100F710E8 /* AppMainUITests.swift in Sources */,
+				9576CED127C92A1100F710E8 /* QuantifyViewTests.swift in Sources */,
 				9576CEBE27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift in Sources */,
+				9576CED527C92AA900F710E8 /* NewItemBoughtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
