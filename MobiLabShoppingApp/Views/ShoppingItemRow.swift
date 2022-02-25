@@ -42,7 +42,7 @@ struct ShoppingItemRow: View {
                 Circle()
                     .fill(shoppingItem.bought ? Color.green : Color.orange)
                     .frame(width: 20, height: 20)
-            }
+            }.accessibilityLabel("DoneButton")
         }
     }
 }

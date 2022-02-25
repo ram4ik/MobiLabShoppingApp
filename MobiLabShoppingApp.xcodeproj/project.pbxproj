@@ -22,7 +22,28 @@
 		9576CEA327C8D02000F710E8 /* ShoppingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA227C8D02000F710E8 /* ShoppingFormView.swift */; };
 		9576CEA527C8D03300F710E8 /* ShoppingItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA427C8D03300F710E8 /* ShoppingItemRow.swift */; };
 		9576CEA727C8D04500F710E8 /* ShoppingItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEA627C8D04500F710E8 /* ShoppingItemListView.swift */; };
+		9576CEAF27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */; };
+		9576CEBC27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */; };
+		9576CEBE27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */; };
+		9576CEC527C8EF4100F710E8 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576CEC427C8EF4100F710E8 /* AppUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9576CEB027C8EC8500F710E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9576CE7427C8BBA600F710E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9576CE7B27C8BBA700F710E8;
+			remoteInfo = MobiLabShoppingApp;
+		};
+		9576CEBF27C8EC8F00F710E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9576CE7427C8BBA600F710E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9576CE7B27C8BBA700F710E8;
+			remoteInfo = MobiLabShoppingApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9576CE7C27C8BBA700F710E8 /* MobiLabShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiLabShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +60,12 @@
 		9576CEA227C8D02000F710E8 /* ShoppingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFormView.swift; sourceTree = "<group>"; };
 		9576CEA427C8D03300F710E8 /* ShoppingItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemRow.swift; sourceTree = "<group>"; };
 		9576CEA627C8D04500F710E8 /* ShoppingItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemListView.swift; sourceTree = "<group>"; };
+		9576CEAC27C8EC8500F710E8 /* MobiLabShoppingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiLabShoppingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiLabShoppingAppTests.swift; sourceTree = "<group>"; };
+		9576CEB927C8EC8F00F710E8 /* MobiLabShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiLabShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiLabShoppingAppUITests.swift; sourceTree = "<group>"; };
+		9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiLabShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9576CEC427C8EF4100F710E8 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +78,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9576CEA927C8EC8500F710E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576CEB627C8EC8F00F710E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				9576CE7E27C8BBA700F710E8 /* MobiLabShoppingApp */,
+				9576CEAD27C8EC8500F710E8 /* MobiLabShoppingAppTests */,
+				9576CEBA27C8EC8F00F710E8 /* MobiLabShoppingAppUITests */,
 				9576CE7D27C8BBA700F710E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				9576CE7C27C8BBA700F710E8 /* MobiLabShoppingApp.app */,
+				9576CEAC27C8EC8500F710E8 /* MobiLabShoppingAppTests.xctest */,
+				9576CEB927C8EC8F00F710E8 /* MobiLabShoppingAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +175,24 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		9576CEAD27C8EC8500F710E8 /* MobiLabShoppingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9576CEAE27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift */,
+			);
+			path = MobiLabShoppingAppTests;
+			sourceTree = "<group>";
+		};
+		9576CEBA27C8EC8F00F710E8 /* MobiLabShoppingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9576CEBB27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift */,
+				9576CEBD27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift */,
+				9576CEC427C8EF4100F710E8 /* AppUITests.swift */,
+			);
+			path = MobiLabShoppingAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +217,42 @@
 			productReference = 9576CE7C27C8BBA700F710E8 /* MobiLabShoppingApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9576CEAB27C8EC8500F710E8 /* MobiLabShoppingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576CEB227C8EC8500F710E8 /* Build configuration list for PBXNativeTarget "MobiLabShoppingAppTests" */;
+			buildPhases = (
+				9576CEA827C8EC8500F710E8 /* Sources */,
+				9576CEA927C8EC8500F710E8 /* Frameworks */,
+				9576CEAA27C8EC8500F710E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9576CEB127C8EC8500F710E8 /* PBXTargetDependency */,
+			);
+			name = MobiLabShoppingAppTests;
+			productName = MobiLabShoppingAppTests;
+			productReference = 9576CEAC27C8EC8500F710E8 /* MobiLabShoppingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9576CEB827C8EC8F00F710E8 /* MobiLabShoppingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576CEC127C8EC8F00F710E8 /* Build configuration list for PBXNativeTarget "MobiLabShoppingAppUITests" */;
+			buildPhases = (
+				9576CEB527C8EC8F00F710E8 /* Sources */,
+				9576CEB627C8EC8F00F710E8 /* Frameworks */,
+				9576CEB727C8EC8F00F710E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9576CEC027C8EC8F00F710E8 /* PBXTargetDependency */,
+			);
+			name = MobiLabShoppingAppUITests;
+			productName = MobiLabShoppingAppUITests;
+			productReference = 9576CEB927C8EC8F00F710E8 /* MobiLabShoppingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +265,14 @@
 				TargetAttributes = {
 					9576CE7B27C8BBA700F710E8 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					9576CEAB27C8EC8500F710E8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9576CE7B27C8BBA700F710E8;
+					};
+					9576CEB827C8EC8F00F710E8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9576CE7B27C8BBA700F710E8;
 					};
 				};
 			};
@@ -186,6 +293,8 @@
 			projectRoot = "";
 			targets = (
 				9576CE7B27C8BBA700F710E8 /* MobiLabShoppingApp */,
+				9576CEAB27C8EC8500F710E8 /* MobiLabShoppingAppTests */,
+				9576CEB827C8EC8F00F710E8 /* MobiLabShoppingAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +306,20 @@
 			files = (
 				9576CE8727C8BBA800F710E8 /* Preview Assets.xcassets in Resources */,
 				9576CE8427C8BBA800F710E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576CEAA27C8EC8500F710E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576CEB727C8EC8F00F710E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +344,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9576CEA827C8EC8500F710E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576CEAF27C8EC8500F710E8 /* MobiLabShoppingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9576CEB527C8EC8F00F710E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576CEBC27C8EC8F00F710E8 /* MobiLabShoppingAppUITests.swift in Sources */,
+				9576CEC527C8EF4100F710E8 /* AppUITests.swift in Sources */,
+				9576CEBE27C8EC8F00F710E8 /* MobiLabShoppingAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9576CEB127C8EC8500F710E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9576CE7B27C8BBA700F710E8 /* MobiLabShoppingApp */;
+			targetProxy = 9576CEB027C8EC8500F710E8 /* PBXContainerItemProxy */;
+		};
+		9576CEC027C8EC8F00F710E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9576CE7B27C8BBA700F710E8 /* MobiLabShoppingApp */;
+			targetProxy = 9576CEBF27C8EC8F00F710E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9576CE8827C8BBA800F710E8 /* Debug */ = {
@@ -398,6 +552,76 @@
 			};
 			name = Release;
 		};
+		9576CEB327C8EC8500F710E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MobiLabShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiLabShoppingApp.app/MobiLabShoppingApp";
+			};
+			name = Debug;
+		};
+		9576CEB427C8EC8500F710E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MobiLabShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiLabShoppingApp.app/MobiLabShoppingApp";
+			};
+			name = Release;
+		};
+		9576CEC227C8EC8F00F710E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MobiLabShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiLabShoppingApp;
+			};
+			name = Debug;
+		};
+		9576CEC327C8EC8F00F710E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.MobiLabShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobiLabShoppingApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +639,24 @@
 			buildConfigurations = (
 				9576CE8B27C8BBA800F710E8 /* Debug */,
 				9576CE8C27C8BBA800F710E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576CEB227C8EC8500F710E8 /* Build configuration list for PBXNativeTarget "MobiLabShoppingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576CEB327C8EC8500F710E8 /* Debug */,
+				9576CEB427C8EC8500F710E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576CEC127C8EC8F00F710E8 /* Build configuration list for PBXNativeTarget "MobiLabShoppingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576CEC227C8EC8F00F710E8 /* Debug */,
+				9576CEC327C8EC8F00F710E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
