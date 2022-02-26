@@ -65,7 +65,7 @@ class FirebaseViewModel: ObservableObject {
         }
     }
     
-    func updateData(todoToUpdate: Todo) {
+    func updateDataToBuy(todoToUpdate: Todo) {
         let db = Firestore.firestore()
         db.collection("todos").document(todoToUpdate.id).setData([
             "realmId" : todoToUpdate.realmId,
@@ -73,6 +73,15 @@ class FirebaseViewModel: ObservableObject {
             "notes" : todoToUpdate.notes,
             "quantity" : todoToUpdate.quantity,
             "bought" : true
+        ], merge: true)
+    }
+    
+    func updateData(todoToUpdate: Todo, title: String, notes: String, quantity: Int) {
+        let db = Firestore.firestore()
+        db.collection("todos").document(todoToUpdate.id).setData([
+            "title" : title,
+            "notes" : notes,
+            "quantity" : quantity
         ], merge: true)
     }
     

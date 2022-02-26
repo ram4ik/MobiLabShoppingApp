@@ -66,7 +66,7 @@ extension ShoppingItemRow {
                     print("UPS! you are here!")
                     return
                 }
-                firestore.updateData(todoToUpdate: item)
+                firestore.updateDataToBuy(todoToUpdate: item)
             }
         }
     }
