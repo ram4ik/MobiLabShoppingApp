@@ -16,7 +16,7 @@ class ShoppingStoreTests: XCTestCase {
         let item = ShoppingItem(id: 1, title: "FirstTitle", notes: "FirstNotes", bought: false, quantity: 1)
         let form = ShoppingForm(item)
         
-        store.create(title: form.title, notes: form.notes, quantity: form.quantity)
+        _ = store.create(title: form.title, notes: form.notes, quantity: form.quantity)
         store.delete(itemId: store.items.first?.id ?? 1)
         
     }
@@ -27,7 +27,7 @@ class ShoppingStoreTests: XCTestCase {
         let item = ShoppingItem(id: 1, title: "SecondTitle", notes: "SecondNotes", bought: true, quantity: 1)
         let form = ShoppingForm(item)
         
-        store.create(title: form.title, notes: form.notes, quantity: form.quantity)
+        _ = store.create(title: form.title, notes: form.notes, quantity: form.quantity)
         store.delete(itemId: store.items.first?.id ?? 1)
     }
     

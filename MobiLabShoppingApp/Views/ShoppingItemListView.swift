@@ -63,6 +63,17 @@ struct ShoppingItemListView: View {
         .navigationBarTitle("MobiLab Shopper")
         .onAppear() {
             refresh()
+            timerRefresh()
+        }
+    }
+    
+    private func timerRefresh() {
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { timer in
+            refresh()
+            if shoppingFormPressented {
+                timer.invalidate()
+            }
         }
     }
     
@@ -95,6 +106,9 @@ struct ShoppingItemListView: View {
         .sheet(isPresented: $shoppingFormPressented) {
             ShoppingFormView(form: ShoppingForm(), firebase: firebase)
                 .environmentObject(store)
+                .onDisappear {
+                    timerRefresh()
+                }
         }
     }
 }

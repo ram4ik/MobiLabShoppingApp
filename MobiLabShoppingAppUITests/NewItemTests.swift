@@ -34,6 +34,8 @@ class NewItemTests: XCTestCase {
         
         app.buttons["1, Bananas"].swipeLeft(velocity: .fast)
         
+        sleep(4)
+        
         XCTAssertTrue(app.buttons["Delete"].exists)
         app.buttons["Delete"].tap()
     }

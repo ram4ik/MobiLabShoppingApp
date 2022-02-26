@@ -31,7 +31,7 @@ class NewItemUpdateTests: XCTestCase {
         app.buttons["Save"].tap()
         
         XCTAssertTrue(app.staticTexts["Milk"].exists)
-        sleep(1)
+        sleep(4)
         app.buttons["1, Milk"].tap()
         
         XCTAssertTrue(app.buttons["Update"].exists)
@@ -42,8 +42,10 @@ class NewItemUpdateTests: XCTestCase {
         app.buttons["DoneButton"].firstMatch.tap()
         
         XCTAssert(app.buttons["1, Milk"].exists)
-        app.staticTexts["Milk"].swipeLeft()
+        //app.staticTexts["Milk"].swipeLeft()
         app.buttons["1, Milk"].swipeLeft()
+        
+        sleep(4)
         
         XCTAssertTrue(app.buttons["Delete"].exists)
         app.buttons["Delete"].tap()
