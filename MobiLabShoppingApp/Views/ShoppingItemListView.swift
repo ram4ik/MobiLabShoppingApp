@@ -13,6 +13,8 @@ struct ShoppingItemListView: View {
     let items: [ShoppingItem]
     let boughtItems: [ShoppingItem]
     
+    @ObservedObject var firebase = FirebaseViewModel()
+    
     var body: some View {
         List {
             Section(header: Text("Items to shop")) {
@@ -43,8 +45,12 @@ struct ShoppingItemListView: View {
                     }
                 }
             }
-        }.listStyle(GroupedListStyle())
+        }
+        .listStyle(GroupedListStyle())
         .navigationBarTitle("MobiLab Shopper")
+        .onAppear() {
+            firebase.getData()
+        }
     }
     
     var newItemButton: some View {
@@ -69,7 +75,7 @@ struct ShoppingItemListView_Previews: PreviewProvider {
     static var previews: some View {
         ShoppingItemListView(
             items: [ShoppingItem(id: 0, title: "title", notes: "notes", bought: false, quantity: 1)],
-            boughtItems: [ShoppingItem(id: 1, title: "title2", notes: "other notes", bought: true, quantity: 2)]
+            boughtItems: [ShoppingItem(id: 1, title: "title", notes: "notes", bought: true, quantity: 8)]
         )
     }
 }

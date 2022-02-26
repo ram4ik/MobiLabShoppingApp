@@ -13,6 +13,8 @@ struct ShoppingFormView: View {
     @ObservedObject var form: ShoppingForm
     let quantityOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     
+    @ObservedObject var firebase = FirebaseViewModel()
+    
     var body: some View {
         NavigationView {
             Form {
@@ -46,6 +48,7 @@ extension ShoppingFormView {
             store.updateItem(itemId: id, title: form.title, notes: form.notes, quantity: form.quantity)
         } else {
             store.create(title: form.title, notes: form.notes, quantity: form.quantity)
+            firebase.addData(realmId: form.shoppingItemId ?? 0, title: form.title, notes: form.notes, quantity: form.quantity, bought: form.updating)
         }
         
         dismiss()
