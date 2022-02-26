@@ -13,7 +13,6 @@ import Foundation
 import FirebaseDatabase
 import FirebaseFirestore
 
-
 class FirebaseViewModel: ObservableObject {
     
     @Published var list = [Todo]()
@@ -76,4 +75,5 @@ class FirebaseViewModel: ObservableObject {
             "bought" : todoToUpdate.bought
         ], merge: true)
     }
+    
 }

@@ -50,6 +50,17 @@ struct ShoppingItemListView: View {
         .navigationBarTitle("MobiLab Shopper")
         .onAppear() {
             firebase.getData()
+            DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+                DispatchQueue.main.async {
+                    createRealmItemsFromFirebase()
+                }
+            }
+        }
+    }
+    
+    private func createRealmItemsFromFirebase() {
+        for item in firebase.list {
+            store.updateItemFromFirestore(realmId: item.realmId, title: item.title, notes: item.notes, quantity: item.quantity, bought: item.bought)
         }
     }
     

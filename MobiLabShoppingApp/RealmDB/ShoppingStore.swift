@@ -28,19 +28,42 @@ final class ShoppingStore: ObservableObject {
 
 // MARK: - CRUD operations
 extension ShoppingStore {
-    func create(title: String, notes: String, quantity: Int) {
+    func create(title: String, notes: String, quantity: Int) -> Int {
         objectWillChange.send()
         
+        let id = UUID().hashValue
         do {
             let realm = try Realm()
             let shoppingItemDB = ShoppingItemDB()
-            shoppingItemDB.id = UUID().hashValue
+            shoppingItemDB.id = id
             shoppingItemDB.title = title
             shoppingItemDB.notes = notes
             shoppingItemDB.quantity = quantity
             
             try realm.write {
                 realm.add(shoppingItemDB)
+            }
+        } catch let err {
+            print(err.localizedDescription)
+        }
+        
+        return id
+    }
+    
+    func updateItemFromFirestore(realmId: Int, title: String, notes: String, quantity: Int, bought: Bool) {
+        objectWillChange.send()
+        
+        do {
+            let realm = try Realm()
+            let shoppingItemDB = ShoppingItemDB()
+            shoppingItemDB.id = realmId
+            shoppingItemDB.title = title
+            shoppingItemDB.notes = notes
+            shoppingItemDB.quantity = quantity
+            shoppingItemDB.bought = bought
+            
+            try realm.write {
+                realm.create(ShoppingItemDB.self, value: shoppingItemDB, update: .modified)
             }
         } catch let err {
             print(err.localizedDescription)

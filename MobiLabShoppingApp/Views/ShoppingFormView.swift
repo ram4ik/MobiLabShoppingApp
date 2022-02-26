@@ -47,8 +47,8 @@ extension ShoppingFormView {
         if form.updating, let id = form.shoppingItemId {
             store.updateItem(itemId: id, title: form.title, notes: form.notes, quantity: form.quantity)
         } else {
-            store.create(title: form.title, notes: form.notes, quantity: form.quantity)
-            firebase.addData(realmId: form.shoppingItemId ?? 0, title: form.title, notes: form.notes, quantity: form.quantity, bought: form.updating)
+            let id = store.create(title: form.title, notes: form.notes, quantity: form.quantity)
+            firebase.addData(realmId: id, title: form.title, notes: form.notes, quantity: form.quantity, bought: form.updating)
         }
         
         dismiss()
