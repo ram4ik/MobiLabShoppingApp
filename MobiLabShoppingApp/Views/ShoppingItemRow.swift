@@ -61,6 +61,12 @@ extension ShoppingItemRow {
         withAnimation {
             if !shoppingItem.bought {
                 store.updateBuy(shoppingItem: shoppingItem)
+                
+                guard let item = firestore.list.first(where: { $0.realmId == shoppingItem.id}) else {
+                    print("UPS! you are here!")
+                    return
+                }
+                firestore.updateData(todoToUpdate: item)
             }
         }
     }

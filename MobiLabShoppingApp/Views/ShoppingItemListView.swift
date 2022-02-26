@@ -56,14 +56,21 @@ struct ShoppingItemListView: View {
                 }
             }
         }
+        .refreshable {
+            refresh()
+        }
         .listStyle(GroupedListStyle())
         .navigationBarTitle("MobiLab Shopper")
         .onAppear() {
-            firebase.getData()
-            DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
-                DispatchQueue.main.async {
-                    createRealmItemsFromFirebase()
-                }
+            refresh()
+        }
+    }
+    
+    private func refresh() {
+        firebase.getData()
+        DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+            DispatchQueue.main.async {
+                createRealmItemsFromFirebase()
             }
         }
     }

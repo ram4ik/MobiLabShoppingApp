@@ -72,7 +72,7 @@ class FirebaseViewModel: ObservableObject {
             "title" : todoToUpdate.title,
             "notes" : todoToUpdate.notes,
             "quantity" : todoToUpdate.quantity,
-            "bought" : todoToUpdate.bought
+            "bought" : true
         ], merge: true)
     }
     
