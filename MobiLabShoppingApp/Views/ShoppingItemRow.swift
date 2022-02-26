@@ -12,6 +12,8 @@ struct ShoppingItemRow: View {
     @State private var shoppingFormPresented = false
     let shoppingItem: ShoppingItem
     
+    @EnvironmentObject var firestore: FirebaseViewModel
+    
     var body: some View {
         HStack {
             Button {
@@ -32,7 +34,7 @@ struct ShoppingItemRow: View {
             }
             .buttonStyle(PlainButtonStyle())
             .sheet(isPresented: $shoppingFormPresented) {
-                ShoppingFormView(form: ShoppingForm(self.shoppingItem))
+                ShoppingFormView(form: ShoppingForm(self.shoppingItem), firebase: firestore)
                     .environmentObject(self.store)
             }
             Spacer()

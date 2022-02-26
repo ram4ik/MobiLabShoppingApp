@@ -19,6 +19,7 @@ struct MobiLabShoppingAppApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(ShoppingStore(realm: RealmPersistence.initializer()))
+                .environmentObject(FirebaseViewModel())
         }
     }
 }

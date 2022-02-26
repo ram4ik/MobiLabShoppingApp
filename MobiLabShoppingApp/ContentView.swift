@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var store: ShoppingStore
+    @EnvironmentObject var firebase: FirebaseViewModel
     
     var body: some View {
         NavigationView {
-            ShoppingItemListView(items: store.items, boughtItems: store.boughtItem)
+            ShoppingItemListView(items: store.items, boughtItems: store.boughtItem, firebase: _firebase)
         }
     }
 }

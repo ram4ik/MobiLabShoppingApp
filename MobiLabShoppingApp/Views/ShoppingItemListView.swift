@@ -13,7 +13,7 @@ struct ShoppingItemListView: View {
     let items: [ShoppingItem]
     let boughtItems: [ShoppingItem]
     
-    @ObservedObject var firebase = FirebaseViewModel()
+    @EnvironmentObject var firebase: FirebaseViewModel
     
     var body: some View {
         List {
@@ -27,6 +27,11 @@ struct ShoppingItemListView: View {
                 }.onDelete { indexSet in
                     if let idx = indexSet.first {
                         store.delete(itemId: items[idx].id)
+
+                        guard let item = firebase.list.first(where: {$0.realmId == items[idx].id}) else {
+                            return
+                        }
+                        firebase.deleteData(todoToDelete: item)
                     }
                 }
 
@@ -42,6 +47,11 @@ struct ShoppingItemListView: View {
                 }.onDelete { indexSet in
                     if let idx = indexSet.first {
                         store.deleteBought(itemId: boughtItems[idx].id)
+                        
+                        guard let item = firebase.list.first(where: {$0.realmId == boughtItems[idx].id}) else {
+                            return
+                        }
+                        firebase.deleteData(todoToDelete: item)
                     }
                 }
             }
@@ -76,7 +86,7 @@ struct ShoppingItemListView: View {
         }
         .foregroundColor(.orange)
         .sheet(isPresented: $shoppingFormPressented) {
-            ShoppingFormView(form: ShoppingForm())
+            ShoppingFormView(form: ShoppingForm(), firebase: firebase)
                 .environmentObject(store)
         }
     }

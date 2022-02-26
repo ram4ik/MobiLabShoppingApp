@@ -13,7 +13,7 @@ struct ShoppingFormView: View {
     @ObservedObject var form: ShoppingForm
     let quantityOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     
-    @ObservedObject var firebase = FirebaseViewModel()
+    @ObservedObject var firebase: FirebaseViewModel
     
     var body: some View {
         NavigationView {
@@ -49,6 +49,9 @@ extension ShoppingFormView {
         } else {
             let id = store.create(title: form.title, notes: form.notes, quantity: form.quantity)
             firebase.addData(realmId: id, title: form.title, notes: form.notes, quantity: form.quantity, bought: form.updating)
+            DispatchQueue.global().asyncAfter(deadline: .now() + 3, execute: {
+                firebase.getData()
+            })
         }
         
         dismiss()
@@ -58,8 +61,8 @@ extension ShoppingFormView {
 struct ShoppingFormView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ShoppingFormView(form: ShoppingForm(ShoppingItem(id: 5, title: "Add new", notes: "Without any notes", bought: false, quantity: 6)))
-            ShoppingFormView(form: ShoppingForm(ShoppingItem(id: 6, title: "Add new in Dark", notes: "Without any notes", bought: true, quantity: 7)))
+            ShoppingFormView(form: ShoppingForm(ShoppingItem(id: 5, title: "Add new", notes: "Without any notes", bought: false, quantity: 6)), firebase: FirebaseViewModel())
+            ShoppingFormView(form: ShoppingForm(ShoppingItem(id: 6, title: "Add new in Dark", notes: "Without any notes", bought: true, quantity: 7)), firebase: FirebaseViewModel())
                 .preferredColorScheme(.dark)
         }
     }

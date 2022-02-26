@@ -112,7 +112,6 @@ extension ShoppingStore {
         objectWillChange.send()
         
         guard let shoppingItemDB = itemResults.first (where: {$0.id == itemId}) else {
-            print("UPS you are here")
             return
         }
         
@@ -130,7 +129,6 @@ extension ShoppingStore {
         objectWillChange.send()
         
         guard let shoppingItemDB = boughtItemResults.first (where: {$0.id == itemId}) else {
-            print("UPS you are here")
             return
         }
         
