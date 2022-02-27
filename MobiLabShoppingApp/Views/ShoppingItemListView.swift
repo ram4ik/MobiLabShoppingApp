@@ -68,8 +68,8 @@ struct ShoppingItemListView: View {
     }
     
     private func timerRefresh() {
-        
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { timer in
+
+        Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { timer in
             refresh()
             if shoppingFormPressented {
                 timer.invalidate()
@@ -78,6 +78,7 @@ struct ShoppingItemListView: View {
     }
     
     private func refresh() {
+        
         firebase.getData()
         DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
             DispatchQueue.main.async {
