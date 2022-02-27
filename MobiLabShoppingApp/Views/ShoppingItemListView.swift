@@ -78,11 +78,12 @@ struct ShoppingItemListView: View {
     }
     
     private func refresh() {
-        
-        firebase.getData()
-        DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
-            DispatchQueue.main.async {
-                createRealmItemsFromFirebase()
+        if !shoppingFormPressented {
+            firebase.getData()
+            DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+                DispatchQueue.main.async {
+                    createRealmItemsFromFirebase()
+                }
             }
         }
     }
